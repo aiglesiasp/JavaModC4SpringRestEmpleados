@@ -34,7 +34,7 @@ public class Departamento {
 	private int presupuesto;
 
 	@OneToMany
-	@JoinColumn(name = "dni")
+	@JoinColumn(name = "empleado")
 	private List<Empleado> empleado;
 
 	// CONSTRUCTORES
