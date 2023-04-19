@@ -12,14 +12,14 @@ import com.aiglesiasp.java.modc4.spring.rest.empleados.dto.Departamento;
  *
  */
 public interface IDepartamentoService {
-	//Metodos del CRUD
-		public List<Departamento> listarDepartamentos(); //Listar All 
-		
-		public Departamento guardarDepartamento(Departamento departamento);	//Guarda un departamento CREATE
-		
-		public Departamento departamentoById(int codigo); //Leer datos de un departamento READ
-		
-		public Departamento actualizarDepartamento(Departamento departamento); //Actualiza datos del departamento UPDATE
-		
-		public void eliminarDepartamento(int codigo);// Elimina el departamento DELETE
+	// Metodos del CRUD
+	public List<Departamento> listarDepartamentos(); // Listar All
+
+	public Departamento guardarDepartamento(Departamento departamento); // Guarda un departamento CREATE
+
+	public Departamento departamentoById(int codigo); // Leer datos de un departamento READ
+
+	public Departamento actualizarDepartamento(Departamento departamento); // Actualiza datos del departamento UPDATE
+
+	public void eliminarDepartamento(int codigo);// Elimina el departamento DELETE
 }

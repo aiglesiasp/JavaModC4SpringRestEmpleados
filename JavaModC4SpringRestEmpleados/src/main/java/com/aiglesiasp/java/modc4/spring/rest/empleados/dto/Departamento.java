@@ -24,7 +24,7 @@ import jakarta.persistence.Table;
 @Entity
 @Table(name = "departamentos")
 public class Departamento {
-	// Atributos de entidad empleado
+	// Atributos de entidad departamento
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int codigo;
@@ -75,6 +75,12 @@ public class Departamento {
 	@OneToMany(fetch = FetchType.LAZY, mappedBy = "Empleado")
 	public List<Empleado> getEmpleado() {
 		return empleado;
+	}
+
+	@Override
+	public String toString() {
+		return "Departamento [codigo=" + codigo + ", nombre=" + nombre + ", presupuesto=" + presupuesto + ", empleado="
+				+ empleado + "]";
 	}
 	
 	
